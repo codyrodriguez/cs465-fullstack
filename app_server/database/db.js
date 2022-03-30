@@ -8,8 +8,8 @@ mongoose.set('useUnifiedTopology', true);
 
 const connect = () => {
     setTimeout(() => mongoose.connect(dbURI, {
-        useNewUrlParser: true,
-        useCreateindex: true
+      useNewUrlParser: true,
+      useCreateIndex: true
     }), 1000);
 }
           
@@ -65,4 +65,4 @@ process.on('SIGTERM', () => {
 connect();
 
 //bring in the Mongoose schema
-require('./travlr');
+require('./models/travlr');
