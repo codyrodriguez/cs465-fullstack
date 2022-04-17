@@ -1,7 +1,7 @@
 const request = require('request');
 const apiOptions = {
- server: 'http://localhost:3000'
-}
+    server: 'http://localhost:3000'
+};
 
 
 
@@ -31,7 +31,7 @@ const renderTravelList = (req, res, responseBody) => {
 const travelList = (req, res) => {
     const path = '/api/trips';
     const requestOptions = {
-        url: '${apiOptions.server}${path}',
+        url: `${apiOptions.server}${path}`,
         method: 'GET',
         json: {},
     };
